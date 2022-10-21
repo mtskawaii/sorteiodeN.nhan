@@ -1,0 +1,148 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'VT323', monospace;
+            text-decoration: none;
+        }
+        
+         :root {
+            --white: #fafafa;
+            --blue: #00348a;
+            --blue-light: #0bbbd6;
+        }
+        /*          header           */
+        
+        header {
+            width: 100%;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.5);
+            background-color: black;
+        }
+        
+        .titulo {
+            font-size: 50pt;
+            color: red;
+        }
+        
+        header a h1 {
+            color: var(--blue);
+            font-size: 2.Brem;
+            font-weight: 300;
+        }
+        /* Conteiner */
+        
+        .conteiner {
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-self: flex-start;
+            background: linear-gradient(to top, #ddd, #eee, red);
+        }
+        /* form */
+        
+        .conteiner form {
+            background: linear-gradient(to top, #ddd, red);
+            border-radius: 10pt;
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            padding: 2rem;
+            margin-top: 1%;
+        }
+        
+        .conteiner form label {
+            color: var(--white);
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .conteiner form input {
+            border: 0;
+            outline: 0;
+            margin: 5% 0;
+            padding: 10px;
+            font-size: 1.2rem;
+            font-weight: 300;
+            border-radius: 0.2rem;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .conteiner form input:focus {
+            box-shadow: inset 1px 2px 4px 1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .conteiner form button {
+            cursor: pointer;
+            margin-top: 3%;
+            border: 0;
+            outline: 0;
+            padding: 0, 8rem;
+            border-radius: 0.2rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+            background: red;
+            color: black;
+            transition: 0.5s;
+        }
+        
+        .conteiner form button:hover {
+            background-color: black;
+            color: red;
+        }
+        
+        .conteiner .result-box {
+            margin-top: 1%;
+            background: #ddd, #eee;
+            width: 40%;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 2px 2px 2px 1px red;
+        }
+        
+        .conteiner .result-box h2 {
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin: 2% 0;
+        }
+        
+        .conteiner .result-box span {
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+        /* bnt */
+        
+        .conteiner #bntRestart {
+            cursor: pointer;
+            border: 0;
+            outline: 0;
+            background-color: red;
+            color: black;
+            padding: 1rem;
+            margin-top: 1%;
+            font-size: 1.3rem;
+            border-radius: 0.3rem;
+            box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.3);
+            transition: 0.5 ease-in-out;
+            display: none;
+        }
+        
+        .conteiner #bntRestart:hover {
+            background-color: black;
+            color: red;
+        }
+        
+        footer {
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+        }
+        
+        footer p {
+            color: red;
+            font-size: 1rem;
+            font-weight: 300;
+        }
